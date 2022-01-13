@@ -87,7 +87,6 @@ let changeSlide = (direction) => {
    
       }
    
-   
 
 
  // web // 
