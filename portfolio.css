@@ -15,8 +15,6 @@
 **/
 
 
-
-
 /*/Animation/*/
 
 @keyframes moveinleft {
@@ -73,6 +71,7 @@ body{
     font-size: 16px;
     line-height: 1.7;
     box-sizing: border-box;
+    grid-template-columns: repeat(10, minmax(min-content,15rem));
 }
 
 /*/Header/*/
@@ -106,7 +105,7 @@ body{
 
 
 .header{
-    height: 95vh;
+    height: 75rem;
     background-image:url(images/abstract-1634214031508-9446.jpg);
     background-size: cover;
     background-position: top;
@@ -145,21 +144,21 @@ body{
         width: 7.5rem;;
         position: absolute;
         top: 35%;
-        left: 47%;}
+        }
     }
 @media screen and (max-width:56.25em) /**900px**/{
     .ps__logo{height: 6rem;
         width: 6.5rem;
         position: absolute;
         top: 35%;
-        left: 47%; }
+         }
     }
 @media screen and (max-width:37.5em) /**600px**/{
     .ps__logo{ height: 5.5rem;
         width: 6rem;
         position: absolute;
-        top: 35%;
-        left: 42%;
+        top: 40%;
+        left: 43%;
        }
         }
 
@@ -181,21 +180,22 @@ body{
 @media screen and (max-width: 68.5em) /**1100px**/
 {
     .heading-primary{ font-size: 3rem;
-        text-align: center;}
+        margin-top:5rem ; }
     }
 @media screen and (max-width:56.25em) /**900px**/{
-    .heading-primary{font-size: 2.5rem; }
+    .heading-primary{font-size: 2.5rem;
+        margin-top: 4rem; }
     }
 @media screen and (max-width:37.5em) /**600px**/{
-    .heading-primary{ font-size: 1.5rem;}
+    .heading-primary{ font-size: 1.9rem;
+        margin-top:10rem ; }
         }
-
 
 .section-blur{
     height: 30rem;
-    width: 101%;
+    width: 100%;
     position: absolute;
-    top: 43rem;
+    top: 47rem;
     background-image:linear-gradient(to bottom, 
     rgb(255, 255, 255,.01),
     rgb(255, 255, 255, .3),
@@ -205,12 +205,14 @@ body{
     filter: blur(3px);
 }
 
+ 
+
 /*/Section about/*/
 
 
 
 .section-about{
-    height:95vh;
+   
     color: #fff ;
 }
 
@@ -259,10 +261,9 @@ body{
     line-height: 2.5rem;
     margin-left:15%;
     text-align: center;
-    margin-top: 3rem;
-    
-}
+    margin-top: 3rem; }
     }
+
 @media screen and (max-width:56.25em) /**900px**/{
     .paragraph{width: 70%;
     font-size: 1rem;
@@ -271,6 +272,7 @@ body{
     text-align: center;
     margin-top: 2rem ;}
     }
+
 @media screen and (max-width:37.5em) /**600px**/{
     .paragraph{width: 80%;
     font-size: .7rem;
@@ -297,8 +299,7 @@ body{
 }
 
 
-@media screen and (max-width: 68.5em) /**1100px**/
-{
+@media screen and (max-width: 68.5em) /**1100px**/{
     .note{
         font-size: 1.5rem;}
     }
@@ -309,6 +310,14 @@ body{
 @media screen and (max-width:37.5em) /**600px**/{
     .note{ font-size: .8rem;}
         }
+
+@media screen and (max-width:30em) /**480px**/{
+    .note{ width: 68%;
+    margin-left: 15%;  } }
+
+@media screen and (max-width:20em) /**320px**/{
+     .note{ width: 90%;
+            margin-left: 15%;  } }
 
 .icon-row{
 margin: 10%;
@@ -354,7 +363,7 @@ margin: 10%;
 @media screen and (max-width:56.25em) /**900px**/{
     .icons{ height: 3.2rem;
         width: 3.2rem;
-        left: 36.5%;}
+        left: 35%;}
     }
 @media screen and (max-width:37.5em) /**600px**/{
     .icons{ height: 2.7rem;
@@ -377,18 +386,14 @@ margin: 10%;
 /*/Section skills/*/
 
 .section-skills{
-    height:100vh;
-    margin-top: -11rem;}
+    height: 90rem;
+   }
 
- @media screen and (max-width: 68.5em) /**1100px**/
-    {.section-skills{margin-top: -30rem;
-    height: +20%;}
-        }
 
 .skill-feature-box{
     color: rgb(255, 255, 255);
     width: 95%;
-    height: 90vh;
+    height: 65rem;
     background-color: #434852;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -396,12 +401,13 @@ margin: 10%;
 @media screen and (max-width:56.25em) /**900px**/{
     .skill-feature-box{
        width: 100%;
+       height: 85rem;
        margin: 0;
          }
     }
 .bgimage{
-    width: 95%;
-    height: 90vh;
+    width: 100%;
+    height: 100%;
 
 }
 @media screen and (max-width:56.25em) /**900px**/{
@@ -417,25 +423,27 @@ margin: 10%;
     text-transform: capitalize;
     color: rgb(255, 255, 255);
     position: absolute;
-    top:175rem;
+    top:165rem;
     left: 10%;
 
 }
-@media screen and (max-width:68.25em) /**1100px**/{
+@media screen and (max-width:68em) /**1100px**/{
     .heading-tertiary-1{
-        top:140rem;
+        top:153rem;
          }
     }
 @media screen and (max-width:56.25em) /**900px**/{
     .heading-tertiary-1{
-        font-size: 2rem;
-        top:130rem;
+        font-size: 2.8rem;
+        top:140rem;
+       
          }
     }
 @media screen and (max-width:37.5em) /**600px**/{
     .heading-tertiary-1{ 
         font-size: 2.4rem;
-        top:122rem;
+        top:125rem;
+        
         }
     }
         
@@ -447,30 +455,27 @@ margin: 10%;
     text-transform: capitalize;
     color: rgb(255, 255, 255);
     position: absolute;
-    top:175rem;
+    top:165rem;
     right:10%;
 }
-@media screen and (max-width:68.25em) /**1100px**/{
+@media screen and (max-width:68em) /**1100px**/{
     .heading-tertiary-2{
-        top:140rem;
+        top:153rem;
          }
     }
 @media screen and (max-width:56.25em) /**900px**/{
     .heading-tertiary-2{
-        font-size: 2rem;
-        top:160rem;
+        font-size: 2.8rem;
+        top:185rem;
          }
     }
 @media screen and (max-width:37.5em) /**600px**/{
     .heading-tertiary-2{ 
         font-size: 2.4rem;
-        top:156rem;
+        top:175rem;
         left: 10%;
         direction: ltr;
-        width: 100%;
-
-        
-        }
+        width: 100%; }
     }
 
 .skills{
@@ -480,9 +485,8 @@ margin: 10%;
     font-weight: 500;
     text-transform: capitalize;
     color: rgb(255, 255, 255);
-    margin: 2rem 2rem;
-    line-height: 9rem;  
-}
+    margin: 0rem 0rem;
+    line-height: 0rem;   }
 
 @media screen and (max-width:56.25em) /**900px**/{
     .skills{
@@ -494,145 +498,104 @@ margin: 10%;
         font-size: 1.5rem;
         }
     }
-.skills_design{
-    position: absolute;
-    top:178rem;
-    left: 9%;
+.skills_design li{
+    position: relative;
+    color: rgb(255, 255, 255);
+    top:-52rem;
+    left: 8%;
+    line-height: 4.5rem;
 }
 
 .skills_coding{
-    position: absolute;
-    top:178rem;
-    right: 9%;
+    position: relative;
     color: rgb(255, 255, 255);
+    top:-97rem;
+    right: 8%;
+    line-height: 4.5rem;
     direction: rtl;
 }
-@media screen and (max-width:68.25em) /**1100px**/{
-    .skills_design,
-    .skills_coding{
-        top:143rem;
-         }
-    }
+
 @media screen and (max-width:56.25em) /**900px**/{
-    .skills_design{
-    top:133rem;
-    line-height: 6rem;
+    .skills_design li{
+    top:10rem;
+    line-height: 4rem;
          }
 
     .skills_coding{
-    top:162rem;
-    line-height: 6rem;
-             }
-        }
+    top: 15rem;
+    line-height: 4rem;
+             }}
+        
 
  @media screen and (max-width:37.5em) /**600px**/{
-    .skills_design{
-    top:124rem;
-    line-height: 5rem;
-                 }
+    .skills_design li{
+    top:10rem;
+    line-height: 3rem;}
+
     .skills_coding{
-    top:158rem;
+    top: 30rem;
     left: 10%;
-    line-height: 5rem;
-    direction: ltr;}}
+    line-height: 3rem;
+    direction: ltr;} }
+    
 .star{
     height:2.2rem ;
     width:2.2rem ;
-    display:inline;
-  
-}
-.stars{
-    position: relative;
-    bottom: 49rem;
-    left: 12rem;
-}
-.stars-1{
-    position: relative;
-    bottom: 43rem;
-    left: 12rem;
-}
-.stars-2{
-    position: relative;
-    bottom: 37rem;
-    left: 12rem;}
-.stars-3{
-    position: relative;
-    bottom: 31rem;
-    left: 12rem;}
-.stars-4{
-    position: relative;
-    bottom: 25rem;
-    left: 12rem;}
+    display:inline;}
 
-.stars-5{
-    position: relative;
-    bottom:64rem;
-    left:  120rem;
-}
-
-.stars-6{
-    position: relative;
-    bottom:58rem;
-    left:  120rem;
-
-}
-
-.stars-7{
-    position: relative;
-    bottom:52rem;
-    left:  120rem;
-
-}
 
 
 /*/Section cards /*/
 
 .section-my-projects{
     height: 50rem;
-    
-
 }
+
 .heading-projects{
     margin-top: -3rem;
 }
 @media screen and (max-width:68.5em) /**900px**/{
-    .heading-projects{font-size: 80%;
-       
-         }
+    .heading-projects{font-size: 80%;  }
     }
+
 .col-1-of-3{
-    display: inline-block;
+    display: inline-block;   
 }
 
-@media screen and (max-width:90em) /**1100px*/{
+@media screen and (max-width:95em) /**1500px*/{
     .col-1-of-3{
-        margin: 1% -4% 5%;
-     justify-content: space-around;  
-}}
+        margin: 1% -4% 5%; }
+}
 
-
-@media screen and (max-width:68.5em) /**900px**/{
+@media screen and (max-width:68em) /**1088px**/{
     .col-1-of-3{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: -17%;   
+        margin-left: -22%;
+         
+}}
+@media screen and (max-width:56em) /**900px**/{
+    .col-1-of-3{
+        margin-left: -25%;      
 }}
 
-@media screen and (max-width:36.5em) /**600px**/{
+@media screen and (max-width:37em) /**600px**/{
     .col-1-of-3{margin-left: -30%; }}
 
 @media screen and (max-width:26.5em) /**400px**/{
-        .col-1-of-3{margin-left: -41%; }}
+        .col-1-of-3{margin-left: -38%;
+        margin-right: 3rem; }}
     
 
 .card{
     margin-left: 15.5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    display: grid;
+    grid-template-rows: 12vh min-content 40vw repeat;
 }
-
-
 
 .card-img{
     height: 45.5rem;
@@ -673,13 +636,13 @@ margin: 10%;
     .card-img,
     .card-img2,
     .card-img3{
-                height: 34rem;
-                width:26rem;
-                position: absolute;
-                top: 3%;
-                left: 3%;
-                 }
-                 }
+        height: 34rem;
+        width:26rem;
+        position: absolute;
+        top: 3%;
+        left: 3%; }
+        }
+
 .card-note{
     font-family: "Segoe UI";
     font-style: italic;
@@ -702,6 +665,7 @@ margin: 10%;
 .card{ 
     position: relative;
     perspective: 150rem; 
+  
 }
 
 .card_side{
@@ -726,12 +690,10 @@ margin: 10%;
 @media screen and (max-width:56.25em) /**900px**/{
     .card_side{
         height: 27rem;
-        width: 20rem;
-         }
+        width: 20rem;  }
          }
     
 
- 
 .card_side--back-1{
     background-image: linear-gradient(to right bottom, #6BBBBF, #99cac5);
     height: 37rem;
@@ -750,8 +712,6 @@ margin: 10%;
     width: 30rem; 
 }
 
-
-
 @media screen and (max-width:68.25em) /**1100px**/{
     .card_side--back-1,
     .card_side--back-2,
@@ -765,8 +725,7 @@ margin: 10%;
     .card_side--back-2,
     .card_side--back-3{
         height: 27rem;
-        width: 20rem;
-         }
+        width: 20rem; }
          }
 
 .card:hover .card_side--front {
@@ -786,9 +745,7 @@ margin: 10%;
     width: 19rem; 
     position: relative;
     left: 5rem;
-    top: 3rem;
-    
-}
+    top: 3rem;}
 
 .btn--still:link,
 .btn--still:visited{
@@ -834,16 +791,20 @@ margin: 10%;
 
 @media screen and (max-width:68.25em) /**1100px**/{
     .contact{
-    margin-top: 120rem;
+    margin-top: 140rem;
              }
         }
 @media screen and (max-width:56.25em) /**900px**/{
     .contact{
-    margin-top: 80rem;
+    margin-top: 100rem;
+    height: 52vh;
                  }
             }
-
-
+ @media screen and (max-width:36.25em) /**600px**/{
+    .contact{
+        margin-top: 80rem;
+        height: 32vh;}
+            }
   
 .disclaimer{
     margin-top: 10rem;
@@ -868,7 +829,8 @@ margin: 10%;
 @media screen and (max-width:36.25em) /**600px**/{
     .heading-contact{
         font-size: 2rem;
-        margin-top: -10rem;    } }
+        margin-top: 40rem;
+           } }
 
 .btn-mail{
     margin-top: 5rem;
@@ -881,10 +843,14 @@ margin: 10%;
     height: 5rem;
     width: 22rem; 
     position: relative;
-    left: 40%;
+    left: 43%;
     top: 3rem;
-    
 }
+
+@media screen and (max-width:75em) /**1100px**/{
+    .btn-mail{
+        left: 40%; }
+        }
 @media screen and (max-width:56.25em) /**900px**/{
     .btn-mail{
         font-size: 1.5rem;
@@ -902,11 +868,14 @@ margin: 10%;
         left: 20%;  
         height: 3.5rem;
         width: 15rem;
-        letter-spacing: .05rem;  } }
+        letter-spacing: .05rem;
+      } }
 
- @media screen and (max-width:29em) /**400px**/{
-            .btn-mail{
-                left: 30%;  
+ @media screen and (max-width:25em) /**400px**/{
+    .btn-mail{
+        height: 3rem;
+        width: 9rem;
+        margin-left: -5%;  
                   } }
 
 .btn-mail:link,
@@ -935,13 +904,13 @@ margin: 10%;
 
 /*/Section footer/*/
 .footer{
-    height:35vh;
+    height:30rem;
     background-color: #434852;
     margin-top: -2rem;}
 
  @media screen and (max-width:29em) /**400px**/{
-    .footer{ margin-top: -25%;
-    height: 20vh;} }
+    .footer{ margin-top: 5rem;
+    height: 20rem;} }
 
 .footer-ps-logo{
     height: 6rem;
@@ -975,9 +944,9 @@ margin: 10%;
 .footer-message{
     color: rgb(255, 255, 255);
     text-transform: capitalize;
-    position: absolute;
+    position: relative;
     left: 12%;
-    top: 513%;
+    top: -8rem;
     font-family: "Segoe UI";
     font-size: 1.7rem;
     width: 25%;
@@ -995,7 +964,7 @@ margin: 10%;
     .footer-message{
         font-size: 1.7rem;
         left: 12%;
-        top: 535%;
+        
         width: 30%;
         padding: 2rem 1rem; 
         margin: -1rem 0rem; 
@@ -1008,7 +977,7 @@ margin: 10%;
         font-size: 1.5rem;
         width: 32%;
         left: 12%;
-        top: 653%;
+        
         padding: 1rem 1rem;
              }
         }
@@ -1018,7 +987,7 @@ margin: 10%;
         font-size: 1rem;
         width: 40%;
         left: 6%;
-        top: 575%;
+       
         padding: .5rem .5rem;
              }
         }
@@ -1027,7 +996,7 @@ margin: 10%;
     .footer-message{
         width: 38%;
         left: 10%;
-        top: 544%; 
+        
         font-size: 1rem;
         padding: .5rem .5rem;
         letter-spacing: .02rem;
@@ -1038,11 +1007,12 @@ margin: 10%;
         font-size: .7rem;
         width: 35%;
         left: 10%;
-        top: 525%; 
+         
         padding: .5rem .5rem;
         letter-spacing: .02rem;
         line-height: 1.3rem;
                   } }
+
 .text{
     width: 15%;
     color: rgb(255, 255, 255);
@@ -1060,14 +1030,11 @@ margin: 10%;
 
 @media screen and (max-width:56.25em) /**900px**/{
     .text{
-        font-size: 1rem;
-       
-             }
+        font-size: 1rem; }
         }
 
 @media screen and (max-width:36.25em) /**600px**/{
-    .text{
-        
+    .text{ 
         font-size: 1rem;
         } }
 
@@ -1157,8 +1124,7 @@ margin: 10%;
         height: 6rem;
         width:6rem;
         left: 3%;
-        top: -10rem;
-     }
+        top: -10rem; }
         }
 
 @media screen and (max-width:36.25em) /**600px**/{
@@ -1172,7 +1138,7 @@ margin: 10%;
         height: 3rem;
         width:3rem;
         left: 6%;
-        top: -11rem;  } }
+        top: -12.5rem;  } }
 
 /*/popup/*/
 
@@ -1264,200 +1230,6 @@ margin: 10%;
     z-index: 1000;
 }
 
-    
-.heading{
-    color: #ffffff;
-    font-family: "roboto";
-    font-size: 2.5rem;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    margin-top: 3rem;
-    position: relative;
-    top: -5rem;
-    left: 7%;
-    width: 18%;  
-    text-decoration-line: underline;
-    z-index: 1000;}
-    
-    
-    @media screen and (max-width:56.25em) /**600px**/{
-        .heading{
-            font-size: 2.3rem;
-            left: 33%;
-            width: 35%;
-            } }
-    
-     @media screen and (max-width:37em) /**550px**/{
-        .heading{
-            font-size: 1.5rem;
-            left: 30%;
-            width: 35%;
-            margin-top: 12%;
-              } }
-    @media screen and (max-width:29em) /**450px**/{
-        .heading{
-            margin-top: 20%; 
-            width: 40%;
-                  
-
-         } }
-
-/*
-.one{
-    opacity: 0.7;
-    position: relative;
-    top: 15rem;
-    left: 12rem;
-    transform: scale(.95);
-}
-.two{
-    opacity: 0.7;
-}
-.puma{
-    height: 25rem;
-    width: 29.8rem;
-    position: relative;
-    left: 46rem;
-    top: -10.7rem; 
-    transform: scale(.95);  
-}
-.video-1{ 
-    height: 24rem;
-    width: 29.8rem; 
-    position: relative;
-    left: 15.8rem;
-    top: -10rem;
-    transform: scale(.95);   
-}
-
-
-.three{
-    opacity: 0.7;
-}
-.starbucks{
-    height: 25.2rem;
-    width: 29.8rem;
-    position: relative;
-    left: 76.9rem;
-    top: -36.7rem;
-    transform: scale(.95);
-    
-}
-.video-2{
-    height: 25rem;
-    width: 29.8rem; 
-    position: relative;
-    left: 46.7rem;
-    top: -36.8rem;  
-    transform: scale(.95); 
-}
-
-
-.four{
-    opacity: 0.7;
-}
-.momo{
-    height: 25.2rem;
-    width: 29.8rem;
-    position: relative;
-    top: -63rem;
-    left: 108rem;
-    transform: scale(.95);
-}
-.video-3{
-    height: 25rem;
-    width: 29.8rem; 
-    position: relative;
-    left: 77.8rem;
-    top: -63rem;
-    transform: scale(.95);
-}
-
-
-.five{
-    opacity: 0.7;
-}
-.emirates{
-    height: 25.2rem;
-    width: 29.8rem;
-    position: relative;
-    top: -62rem;
-    left: 15rem;
-    transform: scale(.95);
-}
-
-
-.six{
-    opacity: 0.7;
-}
-.skydine{
-    height: 25.2rem;
-    width: 29.8rem;
-    position: relative;
-    top: -87.6rem;
-    left: 46rem;
-    transform: scale(.95);
-}
-
-.video-4{
-    height: 25rem;
-    width: 29.8rem; 
-    position: relative;
-    top: -87.7rem;
-    left: 15.8rem; 
-    transform: scale(.95);
-}
-
-
-.seven{
-    opacity: 0.7;
-    
-}
-.classic{
-    height: 25.2rem;
-    width: 29.8rem;
-    position: relative;
-    top: -113.5rem;
-    left: 77rem;
-    transform: scale(.95);
-}
-
-.video-5{
-    height: 25rem;
-    width: 29.8rem; 
-    position: relative;
-    left: 46.8rem;
-    top: -113.5rem;
-    transform: scale(.95);
-}
-
-.car{
-    height: 25.4rem;
-    width: 29.9rem; 
-    position: absolute;
-    top: 58.7rem;
-    left: 108rem;
-    transform: scale(.95);
-    opacity: 0.7;
-}
-
-
-
-.one:hover,
-.two:hover,
-.three:hover,
-.four:hover,
-.five:hover, 
-.six:hover, 
-.seven:hover, 
-.car:hover{
-    transform: scale(1.05);
-    transition: transform 0.5s;
-    opacity: 1;
-    z-index: 1000;
-}
-**/
 
 /*/app /*/ 
 .pop-up-2{
@@ -1473,12 +1245,11 @@ margin: 10%;
     }
 
 .pop-up-content-2{
-      background-color: #fff;
+        background-color: rgb(233, 233, 233);
         width: 110%;
         height: 112%;
         background-size: cover;
         position: fixed;
-        
         top: 55%;
         left: 55%;
         transform: translate(-50%,-50%);
@@ -1549,50 +1320,7 @@ margin: 10%;
     transform: translate(-50%,-50%) scale(1);
 } 
  
-.heading-no2{
-    color: #ffffff;
-    font-family: "roboto";
-    font-size: 2.5rem;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    margin-top: 3rem;
-    position: relative;
-    top: -5rem;
-    left: 7%;
-    width: 18%; 
-    text-decoration-line: underline;
-    z-index: 100;
-    text-shadow: rgb(0, 0, 0);}
-    @media screen and (max-width:68.25em) /**1100px**/{
-        .heading-no2{
-            font-size: 2rem;
-            width: 30%; 
-            left: 2%;
-         }
-            }
-    
-    @media screen and (max-width:56.25em) /**600px**/{
-        .heading-no2{
-            font-size: 2.3rem;
-            left: 33%;
-            width: 35%;
-            } }
-    
-     @media screen and (max-width:37em) /**550px**/{
-        .heading-no2{
-            font-size: 1.5rem;
-            left: 30%;
-            width: 35%;
-            margin-top: 12%;
-              } }
-    @media screen and (max-width:29em) /**550px**/{
-        .heading-no2{
-            margin-top: 20%; 
-            width: 40%;
-                  
 
-         } }
 
    /*/graphic /*/    
 .pop-up-3{
@@ -1611,7 +1339,7 @@ margin: 10%;
     }
 
 .pop-up-content-3{
-        
+        background-color: rgb(233, 233, 233);
         width: 100%;
         height: 120%;
         background-size: cover;
@@ -1682,102 +1410,113 @@ margin: 10%;
     transform: translate(-50%,-50%) scale(1);
 }
 
- /*/slider /*/  
- .background-img{
-    height: 100%;
-    width: 100%;
- } 
-
-
-@media screen and (max-width:56.25em) /**600px**/{
-    .background-img{
-        margin-top: 40%;
-        height: 75%;
-        width: 120%;
-        position: relative;
-        left: -20%;        } 
-                }
-
-@media screen and (max-width:43em) /**400px**/{
-    .background-img{
-        height: 65%;
-        width: 150%;
-        left: -52%; 
-        margin-top: 50%;     } }
-
-@media screen and (max-width:25em) /**300px**/{
-    .background-img{
-            height: 45%;
-            width: 160%;
-            left: -57%; 
-            margin-top: 95%; 
-          } }
-
-
- .background-video{
-    height: 100%;
-    width: 100%;
- } 
-
- @media screen and (max-width:56.25em) /**600px**/{
-    .background-video{ 
-        height: 135%;
-        width: 120%;
-        position: relative;
-        left: -20%;
-        top: 4%;
-         } 
-        }
-@media screen and (max-width:43em) /**400px**/{
-    .background-video{ 
-        height: 140%;
-        width: 155%;
-        position: relative;
-        left: -53%;
-        top: -12%;
-                 } 
-                }
-
-@media screen and (max-width:25em) /**300px**/{
-    .background-video{ 
-        height: 130%;
-        width: 155%;
-        position: relative;
-        left: -53%;
-        top: -5%;         }  }
-.title{
-    text-shadow: rgb(94, 94, 94) .2rem .1rem;
-}
-@media screen and (max-width:56em) /**600px**/{
-    .title{
-        font-size: 2rem;
-        position: relative;
-        top: -28%;
-     } }
-
-@media screen and (max-width:30em) /**500px**/{
-    .title{
-        font-size: 1rem;} }
-
-.sub-text{
-    font-size: 2rem;
-}
-
-@media screen and (max-width:56.25em) /**900px**/{
-    .sub-text{display: none;}}
-          
+ /*/slider /*/ 
+.slider, 
 .slider-container,
-.container,
-.slider{
+.container{
     position: relative;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
- }
+     }
 
+ .title{
+    text-shadow: rgb(94, 94, 94) .2rem .1rem;
+    
+    top: 1em;
+    
+}
+
+
+.sub-text{
+        font-size: 2rem;}
+        
+@media screen and (max-width:56.25em) /**900px**/{
+    .sub-text{display: none;} }
+
+.heading{
+    color: #ffffff;
+    font-family: "roboto";
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+    top: 0rem;
+    left: 7%;
+    width: 20%;  
+    text-decoration-line: underline;
+    z-index: 1000;}
+        
+        
+ @media screen and (max-width:56.25em) /**900px**/{
+    .heading{
+    font-size: 2.3rem;
+    left: 33%;
+    width: 35%; } }
+        
+ @media screen and (max-width:37em) /**550px**/{
+    .heading{
+    left: 30%;
+    width: 39%;  } }
+                  
+@media screen and (max-width:29em) /**450px**/{
+    .heading{
+    font-size: 1.5rem; 
+    width: 40%; } }
+
+.heading-no2,
+.heading-no3{
+    color: #ffffff;
+    font-family: "roboto";
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+    top: auto;
+    left: 7%;
+    width: 18%; 
+    text-decoration-line: underline;
+    z-index: 100;
+    text-shadow: rgb(0, 0, 0);}
+
+@media screen and (max-width:68.25em) /**1100px**/{
+    .heading-no2,
+    .heading-no3{
+        font-size: 2.5rem;
+        width: 30%; 
+        left: 2%; }
+                }
+        
+ @media screen and (max-width:56.25em) /**600px**/{
+    .heading-no2,
+    .heading-no3{
+        font-size: 2.5rem;
+        left: 33%;
+        width: 35%;
+                } }
+        
+ @media screen and (max-width:37em) /**550px**/{
+    .heading-no2,
+    .heading-no3{
+        font-size: 2rem;
+        left: 30%;
+        width: 35%;
+        
+                  } }
+@media screen and (max-width:29em) /**350px**/{
+    .heading-no2,
+    .heading-no3{
+       
+        width: 40%; } }
+
+.leftside,
 .left-slide,
-.left-side,
-.leftside{
+.left-side{
+    
     height: 100%;
     width: 35%;
     position:absolute;
@@ -1786,16 +1525,16 @@ margin: 10%;
     transition: all 0.9s ease-in-out  ;
  }
 
- @media screen and (max-width:56.25em) /**600px**/{
+ @media screen and (max-width:56.25em) /**900px**/{
+.leftside,
 .left-slide,
-.left-side,
-.leftside{
+.left-side{
     width: 100%;
         } }
 
- .left-slide > div,
- .left-side > div,
- .leftside > div{
+.leftside > div,
+.left-slide > div,
+.left-side > div{
     height:100%;
      width:100%;
      display: flex;
@@ -1804,108 +1543,81 @@ margin: 10%;
      justify-content: center;
      color: #fff;
  }
-
- 
-
- .left-slide h1,
- .left-side h1,
- .leftside h1{
+ @media screen and (max-width:56.25em) /**900px**/{
+.leftside > div,
+.left-slide > div,
+.left-side > div{
+    padding-top: 15rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+            } }
+.leftside h1,
+.left-slide h1,
+.left-side h1{
      font-size: 40px;
      margin-bottom: 10px;
      margin-top: -30px;
  }
- 
+
+ .rightside,
  .right-slide,
- .right-side,
- .rightside {
+ .right-side
+  {
      height: 100%;
      position: absolute;
-     top: 0;
+     top: 0rem;
      left: 35%;
      width: 65%;
      transition: all 0.9s ease-in-out  ;}
 
- @media screen and (max-width:56.25em) /**600px**/{
-.right-slide,
-.right-side
-{
-        width: 60rem;
-        height: 47rem;
-        top: 20%;
-        left: 15%;
-        margin-top: 10%;
-        
-            } }
+ @media screen and (max-width:56.25em) /**900px**/{  
+    .rightside{left: 18%}
+    .right-slide{ left: 16.5% } 
+    .right-side{ left: 15.5% }  
+}
 
-@media screen and (max-width:43em) /**400px**/{
-.right-slide
-{     
-        width: 60rem;
-        height: 40rem;
-        top: 19%;
-        left: 0%;  } }
- @media screen and (max-width:43em) /**400px**/{
-    .img2{       margin-top: 25rem;}
-    .img3{       margin-top: 15rem;} 
-    .img4{       margin-top: 27rem;} 
-    .img3{       margin-top: 35rem;} 
-        
-        }
-
- @media screen and (max-width:35em) /**300px**/{
-    .right-slide{   
-         width: 100%;
-        height: 40%;
-        top: 30%;
-        left: 0%;
-                } }
-
-@media screen and (max-width:35em) /**300px**/{
-        .img2{       margin-top: 35rem;}
-        .img3{       margin-top: 40rem;} 
-        .img4{       margin-top: 40rem;} 
-        .img5{       margin-top: 47rem;} 
-                        
-                        }
-
-@media screen and (max-width:43em) /**400px**/{
-.right-side{
-    margin-top: 10rem;    
-    width: 60rem;
-    height: 40rem;
-    top: 5%;
-    left: 0%;} }      
-
- @media screen and (max-width:35em) /**300px**/{
-.right-side{ width: 100%;
-    height: 35%;
-    top: 40%;
-    left: 0%;}   
+     .bg-image{
+        width: 100%;
+        height:auto ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    @media screen and (max-width:56.25em) /**900px**/{  
+        .bg-image{
+            
+            padding:  5rem 0rem;
+            width: 90vw;
+            height:auto ;
+                    
+    }  }
 
- .right-slide > div,
- .right-side > div,
- .rightside > div{
+.rightside > div,
+.right-slide > div,
+.right-side > div{
      height: 100%;
      width: 100%;
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  }
 
- .image{
-     height: 100%;
-     width: 100%;
- }
- 
- 
- @media screen and (max-width:56.25em) /**900px**/{
-    .image{
-             position: relative;
-             top: 0%;
-             margin-bottom: 30%;
-                } }
+ @media screen and (max-width:56.25em) /**900px**/{  
+    .rightside > div,
+    .right-slide > div,
+    .right-side > div{
 
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+}
  button{
      height: 3.6rem;
      width: 3rem;
@@ -1973,8 +1685,8 @@ margin: 10%;
     .container .action-btn .down-btn,
     .slider .actionbttn .downbttn{ 
         position: absolute;
-        left: 8%;
-        top: 55%;
+        left: 50%;
+        top: 92%;
          } 
         }
 @media screen and (max-width:43em) /**400px**/{
