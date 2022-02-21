@@ -62,10 +62,20 @@ box-sizing:inherit;
 }
 
 html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
     font-size: 62.5%;}
 
     
 body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: "Segoe UI", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -275,7 +285,7 @@ body{
 
 @media screen and (max-width:37.5em) /**600px**/{
     .paragraph{width: 80%;
-    font-size: .7rem;
+    font-size: .9rem;
     line-height: 1.7rem;
     margin-left:11%;
     text-align: center;
@@ -313,7 +323,9 @@ body{
 
 @media screen and (max-width:30em) /**480px**/{
     .note{ width: 68%;
-    margin-left: 15%;  } }
+    margin-left: 15%;
+    font-size: 1rem;
+      } }
 
 @media screen and (max-width:20em) /**320px**/{
      .note{ width: 90%;
@@ -551,12 +563,7 @@ margin: 10%;
     height: 50rem;
 }
 
-.heading-projects{
-    margin-top: -3rem;
-}
-@media screen and (max-width:68.5em) /**900px**/{
-    .heading-projects{font-size: 80%;  }
-    }
+
 
 .col-1-of-3{
     display: inline-block;   
@@ -787,7 +794,7 @@ margin: 10%;
 
 /*/Section contact/*/
 .contact{
-    height: 62vh;}
+    height: 60rem;}
 
 @media screen and (max-width:68.25em) /**1100px**/{
     .contact{
@@ -803,34 +810,14 @@ margin: 10%;
  @media screen and (max-width:36.25em) /**600px**/{
     .contact{
         margin-top: 80rem;
-        height: 32vh;}
+        height: 30rem;}
             }
   
 .disclaimer{
     margin-top: 10rem;
 }
-.heading-contact{
-    color: #282A49;
-    font-family: "Lucida Fax";
-    font-size: 3rem;
-    font-weight: 100;
-    font-style: italic;
-    text-align: center;
-    margin-top: 23rem;
-    margin-bottom: -5rem;
-    
-}
-@media screen and (max-width:56.25em) /**900px**/{
-    .heading-contact{
-        font-size: 2.5rem;
-             }
-        }
 
-@media screen and (max-width:36.25em) /**600px**/{
-    .heading-contact{
-        font-size: 2rem;
-        margin-top: 40rem;
-           } }
+
 
 .btn-mail{
     margin-top: 5rem;
@@ -1199,7 +1186,8 @@ margin: 10%;
             width: .02rem;
             height: .02rem;
             font-size: 1.5rem;
-            left: 90%;
+            top: 5rem;
+            left: 85%;
             padding: 0rem .6rem 0.3rem .6rem;
               } }
 .popup-close:hover{
