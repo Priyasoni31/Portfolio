@@ -56,26 +56,29 @@
 *,
 *::after,
 *::before{
-margin:0;
-padding:0;
+margin:0 ;
+padding:0  ;
 box-sizing:inherit;
+
 }
 
 html{
+    
+    overflow-x:hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    
     font-size: 62.5%;}
 
     
 body{
+    
+    
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: "Segoe UI", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -202,6 +205,7 @@ body{
         }
 
 .section-blur{
+    
     height: 30rem;
     width: 100%;
     position: absolute;
@@ -447,7 +451,8 @@ margin: 10%;
 @media screen and (max-width:56.25em) /**900px**/{
     .heading-tertiary-1{
         font-size: 2.8rem;
-        top:140rem;
+        top:137rem;
+        left: 8%;
        
          }
     }
@@ -458,7 +463,11 @@ margin: 10%;
         
         }
     }
-        
+@media screen and (max-width:23.75em) /**380px**/{
+    .heading-tertiary-1{  
+            top:130rem; 
+            }
+        }    
 .heading-tertiary-2{
     display: inline;
     font-family: "Lucida Fax";
@@ -478,7 +487,8 @@ margin: 10%;
 @media screen and (max-width:56.25em) /**900px**/{
     .heading-tertiary-2{
         font-size: 2.8rem;
-        top:185rem;
+        top:182rem;
+        right: 5%;
          }
     }
 @media screen and (max-width:37.5em) /**600px**/{
@@ -489,7 +499,11 @@ margin: 10%;
         direction: ltr;
         width: 100%; }
     }
-
+ @media screen and (max-width:23.75em) /**380px**/{
+    .heading-tertiary-2{  
+                top:180rem; 
+                }
+            } 
 .skills{
     list-style: none;
     font-family: "Segoe UI";
@@ -541,11 +555,11 @@ margin: 10%;
 
  @media screen and (max-width:37.5em) /**600px**/{
     .skills_design li{
-    top:10rem;
+    top:15rem;
     line-height: 3rem;}
 
     .skills_coding{
-    top: 30rem;
+    top: 32rem;
     left: 10%;
     line-height: 3rem;
     direction: ltr;} }
