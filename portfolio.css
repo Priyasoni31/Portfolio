@@ -63,7 +63,7 @@ box-sizing:inherit;
 }
 
 html{
-    
+  
     overflow-x:hidden !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -71,11 +71,12 @@ html{
     height: 100%;
     font-size: 62.5%;}
 
-    
+
 body{
     
-    
+ 
     width: 100%;
+    overflow-x:clip;
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
@@ -86,7 +87,17 @@ body{
     box-sizing: border-box;
     grid-template-columns: repeat(10, minmax(min-content,15rem));
 }
+@media screen and (max-width:37.5em) /**600px**/{
+    body,html{
+        overflow-x: hidden; 
+        overflow: visible;
+          
+    }
 
+    .section-blur{
+        display: none;
+    }
+}
 /*/Header/*/
 
 .name{
@@ -309,7 +320,8 @@ body{
     letter-spacing: .1rem;
     line-height: 3.5rem;
     margin-top: 5rem;
-    color: #282A49
+    color: #282A49;
+    overflow-wrap: break-word;
 }
 
 
@@ -326,14 +338,14 @@ body{
         }
 
 @media screen and (max-width:30em) /**480px**/{
-    .note{ width: 68%;
-    margin-left: 15%;
+    .note{ width: 75%;
+    margin-left: 12%;
     font-size: 1rem;
       } }
 
 @media screen and (max-width:20em) /**320px**/{
      .note{ width: 90%;
-            margin-left: 15%;  } }
+            margin-left: 3%;  } }
 
 .icon-row{
 margin: 10%;
@@ -373,7 +385,7 @@ margin: 10%;
 @media screen and (max-width: 68.5em) /**1100px**/
 {
     .icons{
-    left: 36%; }
+    left: 35%; }
     }
 
 @media screen and (max-width:56.25em) /**900px**/{
@@ -388,11 +400,13 @@ margin: 10%;
         margin-top: 0rem;}
         }
         
-    @media screen and (max-width:29em) /**600px**/{
+    @media screen and (max-width:29em) /**400px**/{
     .icons{ 
-        left: 20%;}
+        left: 22%;}
     }
-
+    @media screen and (max-width:20em) /**320px**/{
+        .icons{ 
+               left: 15%;  } }
 .icons:hover{
     transform: scale(1.2);
     transition: all .3s;
@@ -441,6 +455,7 @@ margin: 10%;
     position: absolute;
     top:165rem;
     left: 10%;
+   
 
 }
 @media screen and (max-width:68em) /**1100px**/{
@@ -606,7 +621,7 @@ margin: 10%;
     .col-1-of-3{margin-left: -30%; }}
 
 @media screen and (max-width:26.5em) /**400px**/{
-        .col-1-of-3{margin-left: -38%;
+        .col-1-of-3{margin-left: -35%;
         margin-right: 3rem; }}
     
 
@@ -808,7 +823,8 @@ margin: 10%;
 
 /*/Section contact/*/
 .contact{
-    height: 60rem;}
+    height: 60rem;
+margin-bottom: 20rem}
 
 @media screen and (max-width:68.25em) /**1100px**/{
     .contact{
@@ -876,7 +892,7 @@ margin: 10%;
     .btn-mail{
         height: 3rem;
         width: 9rem;
-        margin-left: -5%;  
+        margin-left: -7%;  
                   } }
 
 .btn-mail:link,
@@ -1005,7 +1021,7 @@ margin: 10%;
 
  @media screen and (max-width:29em) /**400px**/{
     .footer-message{
-        font-size: .7rem;
+        font-size: .6rem;
         width: 35%;
         left: 10%;
          
@@ -1420,13 +1436,13 @@ margin: 10%;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    
      }
 
  .title{
     text-shadow: rgb(94, 94, 94) .2rem .1rem;
-    
     top: 1em;
-    
+ 
 }
 
 
