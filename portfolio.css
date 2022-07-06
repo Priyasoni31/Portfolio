@@ -618,7 +618,7 @@ margin: 10%;
 }}
 
 @media screen and (max-width:37em) /**600px**/{
-    .col-1-of-3{margin-left: -30%; }}
+    .col-1-of-3{margin-left: -22%; }}
 
 @media screen and (max-width:26.5em) /**400px**/{
         .col-1-of-3{margin-left: -35%;
